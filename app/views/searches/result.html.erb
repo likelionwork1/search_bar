@@ -1,0 +1,11 @@
+<h1>Searches#result</h1>
+<p>Find me in app/views/searches/result.html.erb</p>
+
+<div class="container">
+    <% @searches.each do |x| %>
+        <%= x.title %>　|　<%= x.content %>
+        <hr/>
+    <% end %>
+</div>
+
+<%= link_to '돌아가기', root_path %>
