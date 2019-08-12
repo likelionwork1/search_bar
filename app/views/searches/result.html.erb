@@ -1,6 +1,8 @@
 <h1>Searches#result</h1>
 <p>Find me in app/views/searches/result.html.erb</p>
 
+<span> 입력한 검색어: <%= @word %> </span>
+<hr>
 <div class="container">
     <% @searches.each do |x| %>
         <%= x.title %>　|　<%= x.content %>
